@@ -2,7 +2,7 @@ package circe_test
 
 import io.circe._
 import io.circe.generic.extras._
-import io.circe.generic.extras.semiauto._
+import io.circe.generic.semiauto._
 
 @ConfiguredJsonCodec case class User(userId: Int, userName: String, address: Address, mail: Option[String])
 @ConfiguredJsonCodec case class Address(prefectureName: String, cityName: String)
